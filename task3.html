@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form </title>
+</head>
+<body>
+    <h1>Professional Job Application</h1>
+    <form>
+
+        <label>Full Name:</label><br>
+        <input type="text" placeholder="Enter your name">
+          <br><br>
+
+        <label>Email Address:</label> <br>
+        <input type="email"  placeholder="example@gmail.com">
+        <br><br>
+
+        <label>Password:</label><br> 
+        <input type="password" >
+        <br><br>
+
+        <label>Current Work Status</label>
+        <br><br>
+        <input type="radio" name="status" value="Student">Student <br>
+         <input type="radio" name="status" value="Employee">Employee <br>
+          <input type="radio" name="status" value="Freelancer">Freelancer 
+          <br><br>
+        <label >Years of Experience:</label>
+        <select>
+            <option value="Fresher">Fresher</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3+</option>
+        </select>
+        <br><br>
+
+        <label>Tech Stack(skills):</label>
+        <br><br>
+        <input type="checkbox" name="skills"  value="HTML">HTML <br>
+        <input type="checkbox" name="skills"  value="CSS">CSS  <br>
+        <input type="checkbox" name="skills"  value="Node.js">Node.js <br>
+        <br>
+        
+        <label>Upload Resume(PDF):</label><br>
+        <input type="file" accept=".pdf"><br><br>
+
+        <label>Cover Letter/About Yourself:</label><br>
+        <textarea rows="5" cols="40" placeholder="Write something about your project"></textarea>
+        <br><br>
+
+        <input type="submit" value="Submit Application">
+        <input type="reset" value="Clear Form ">
+
+
+
+
+    </form>
+</body>
+</html>

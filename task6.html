@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="task6.css">
+</head>
+<body>
+     <form>
+   <header>
+       <h2>📦 Seller Central Dashboard</h2>
+       <p>Welcome,<b>Murali Traders</b>(ID:#8821) | <a href="#">Settings |</a>
+       <a href="#">Logout</a></p>
+    
+       <label>Search Orders/Products: </label>
+        
+        <input type="search" placeholder="Enter Order ID">
+        <input type="submit" value="🔍Go"> 
+       
+   </header>
+    <hr>
+  
+   <nav>
+        <h3>Navigation</h3>
+        <ul>
+            <li><a href="#">📊 Dashboard</a> </li>
+            <li><a href="#">📦 Inventory Management</a> </li>
+            <li><a href="#">🗒️ Order History</a></li>
+            <li><a href="#">💳 Payments & Payouts</a></li>
+            <li><a href="#">📢 Customer Messages(2)</a>   </li>
+        </ul>
+        <br>
+        <h3>⚡Quick Actions</h3>
+        <button type="submit">Add New Product</button>
+        <br><br>
+        <button type="submit">Download Sales Report</button>
+   </nav>
+   <main>   
+     <section>
+       
+        <fieldset>
+            <legend><b>Filter Data View</b></legend>
+            
+                <label>From:</label>
+                <input type="date">
+                <label>To:</label>
+                <input type="date">
+                <input type="submit" value="Update View">
+           
+        </fieldset>
+          <h3>📈 Perfomance Overview</h3>
+          <b>Monthly Sales Target</b>
+          <p>current Sales:₹ 75,000 / Target:₹ 1,00,000 </p>
+          <label >  progress: </label>
+           <meter min="0" max="100" value="80" ></meter> (Good)
+           <br> <br>
+          <strong>Seller Rating</strong>
+          <br><br>
+          <label >Score:</label>
+         <meter min="0" max="5.0" value="4.2"></meter> (4.2/5.0)
+           
+          <hr>             
+     </section>
+
+     <section>
+
+        <h3>⚠️Low Stock Alert</h3> 
+        
+        <table border="1" cellspacing="0" cellpadding="10">
+            <tr>
+                <th>Product Name</th>
+                <th>Stock Status(Visual)</th>
+                <th>Quality Left</th>
+                <th>Action</th>
+            </tr>
+            <tr>
+                <td>Sony WH-1000XM5 Headphones</td>
+                <td>
+                    <progress min="0" max="100" value="15"></progress>
+                </td>
+                <td><b>15 units</b>(Critical)</td>
+                <td>
+                    <input type="submit" value="Restock Now">
+                </td>
+                
+            </tr>
+            <tr>
+                <td>Apple USB-C Adapter</td>
+                <td>
+                    <progress min="0" max="100" value="80"></progress>
+                </td>
+                <td>80 units (Healthy)</td>
+                <td><input type="submit" value="Auto-Refill-On " disabled></td>
+            </tr>
+
+        </table> 
+     </section>
+
+     <section>
+             <h3>🗒️ Recent Orders</h3>
+             <table class="t2"  border="1" cellspacing="0" cellpadding="10" >
+                 <tr>
+                    <th>Order ID </th>
+                    <th>Customer</th>
+                    <th>Product</th>
+                    <th>Amount</th>
+                    <th>Status</th>
+                    <th>Manage</th>
+                 </tr>
+                 <tr>
+                    <td>
+                        <a href="#">#ORD-9921</a>
+                    </td>
+                    <td>Raju Bhai</td>
+                    <td>Gaming Mouse - Logitech</td>
+                    <td>₹ 1,499 </td>
+                    <td bgcolor="beige">Pending Packing</td>
+                    <td>
+                        <select>
+                            <option>Print Label</option>
+                            <option>Pack</option>
+                        </select>
+                        <input type="submit" value="Update">
+                    </td>
+                 </tr>
+                 <tr>
+                    <td>
+                        <a href="#">#ORD-9922</a>
+                    </td>
+                    
+                    <td>Anitha S</td>
+                    <td>Bluetooth Speaker</td>
+                    <td>₹ 2,999</td>
+                    <td bgcolor="#E5F6E4"> shipped</td>
+                    <td><input type="submit" value="Track"></td>
+                 </tr>
+                 <tr >
+                   <td colspan="3" bgcolor="#ffeef2" align="end"><b>Total Revenue Today</b></td>
+                    <td colspan="3" bgcolor="#ffeef2"> <b>₹ 4,498</b> </td>
+      
+
+                 </tr>
+             </table>
+     </section>
+       <article>
+          <h3>🔔System Notification</h3>
+        <details class="d1">
+            <summary>🔴 Return Request-Order #5512(click to expand)</summary>
+            <p>Customer Reason: "Product damaged during shipping." <br>
+               Requested Action: Refund. <br><br>
+            <input type="submit" value="Approve Refund">
+            <input type="submit" value="Contact Buyer">
+            </p>
+
+         </details>
+        </article>
+
+        <article>
+        <details class="d2">
+            <summary>🟢 New Policy Update (Read)</summary>
+            <p>Effective from next week, shipping fees will be reduced by 5% for Gold Sellers.</p>
+        </details>
+     </article>
+      
+   </main>
+   <footer>
+    <hr>
+        <p>&copy 2023 TechKart Lgistics | 
+            <a href="#" >Help Center |</a>
+            <a href="#"> Seller API</a>
+           |  System Version 2.0.1
+        </p>
+        
+       
+   </footer>
+    
+    </form>
+   
+</body>
+</html>

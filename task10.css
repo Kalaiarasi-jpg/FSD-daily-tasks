@@ -1,0 +1,564 @@
+body{
+    background-color: rgb(1, 6, 24);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0%;
+    
+   
+}
+marquee{
+    text-transform: uppercase;
+    background:linear-gradient(to right,rgb(84, 84, 163),rgb(80, 160, 230) );
+    padding:10px;
+    color: aliceblue;    
+}
+nav {
+    background-color: rgb(4, 9, 43);
+    padding: 20px;
+    color: white;
+    display:flex;
+    justify-content: space-between;
+    position: sticky;
+    top:0px;
+    z-index: 1;  
+}
+ nav h1{
+   margin:0px 30px;
+   color: rgb(69, 181, 206);
+
+}
+
+li{
+    list-style: none;
+    margin:0px 20px;
+    text-transform: uppercase;
+    display: inline;   
+} 
+
+.home{
+  margin:0px 60px;
+  
+}
+.home p{
+     font-size: 20px;
+     color: rgb(155, 159, 159);
+     margin-top: 10px;
+}
+.home h4{
+    color: rgb(125, 241, 243);
+    font-size: 20px;
+    margin-top: 100px ;
+    margin-bottom: 0px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+     
+}
+.home h1{
+    color: rgb(194, 246, 246);
+    font-size: 90px;
+    margin: 0px;
+}
+.home img {
+    width:100%;
+    height: 400px;
+    max-width: 500px;
+    margin: 0% 5%;
+    float: right;
+  
+    animation: float 3s alternate infinite;
+    z-index: 2; 
+}
+
+@keyframes float{
+    from{transform: translateY(-30px);}
+    to{transform: translateY(10px);}
+}
+.home button{
+    
+    padding: 20px 50px;
+    border-radius: 5px;
+    background-color: rgb(21, 228, 243);
+    color: black;
+    font-weight: bold;
+    font-size:large;
+    margin-top: 20px;
+    border: none;
+}
+.home button:hover{
+    box-shadow: 1px 2px 20px 5px rgb(165, 240, 255);
+    cursor: pointer;
+
+}
+ .contain{
+    margin-top: 200px ;
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    background-color: rgb(14, 21, 36);
+    padding:30px 70px;
+}
+.box h1 {
+    color: rgb(26, 216, 241);
+    font-size: 40px;  
+    margin: 0px;   
+}
+.box p{
+   text-align: center;
+   margin-top: 0px;
+   color: rgb(157, 157, 157);
+   font-size: 12px;
+   text-transform: uppercase;
+}
+h2{
+    color: azure;
+    text-align: center;
+    margin: 30px 0px;
+}
+.products{
+    height:600px;
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    gap:20px;
+}
+.cards{
+    height: 500px;
+    width:350px;
+    perspective: 1000px;
+    margin: 0px 20px;
+}
+.card-inner{
+    width:100%;
+    height: 100%;
+    position: relative;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+.card-inner:hover{
+    transform: rotateY(180deg);
+}
+.front,.back{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+
+}
+.front{
+    background-color: rgb(16, 18, 34);
+    color: aliceblue;
+    border-radius: 10px;
+    padding:10px;
+    text-align: center;
+    
+}
+.back{
+    background:linear-gradient(to bottom,rgb(1, 124, 255),rgb(12, 214, 236)) ;
+    transform: rotateY(180deg);
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+  
+}
+.back h3{
+    margin-top: 160px;
+    color: black;
+}
+.back p{
+    color:rgb(0, 0, 0);
+    font-size: 15px;
+}
+.back button{
+    width:300px;
+    background-color: rgb(44, 227, 255);
+    color: black;
+    padding: 10px;
+    margin:10px;
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+}
+.back button:hover{
+   box-shadow: 5px 3px 20px 5px rgb(7, 227, 251);
+   cursor: pointer;
+}
+.front img{
+    height: 300px;
+    width: 340px;
+    margin-top: 10px;
+}
+.front p{
+    color: rgb(100, 203, 251);
+    font-weight: bold;
+}
+.footer{
+   
+    display:flex;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: space-evenly;
+  
+    background-color: rgb(0, 0, 0);
+   
+    padding: 10px;
+
+}
+.footer p:hover{
+    color: aliceblue;
+    cursor: pointer;
+}
+.footer p{
+    color: rgb(118, 118, 118);
+    word-spacing: 3px;    
+}
+.f1{
+    width:300px;   
+}
+.f1 h1{
+    color: rgb(69, 181, 206);
+}
+.foot h3{
+    color: aqua;
+    text-transform: uppercase;
+}
+@media (min-width:0px) and (max-width:640px){
+marquee{
+    font-size: 10px;
+}
+nav{
+   padding: 2px; 
+}
+li{
+    font-size:10px;
+}
+nav h1{
+    font-size:20px ;
+}
+.home h4{
+    font-size: 15px;
+    letter-spacing: 5px;
+
+}
+.home h1{
+    font-size: 30px;
+    margin: 10px 0px;
+}
+.home img{
+     height: 230px;
+     width: 200px;
+}
+.home button{
+    padding: 10px 30px;
+    font-size: medium;
+}
+.contain{
+    margin-top: 100px;
+    height: 50px;
+    padding: 30px;
+
+}
+.box h1{
+    font-size: 25px;
+}
+.box p{
+    font-size:7px;
+}
+.products{
+    height: 350px;
+    margin: 5px ;
+  
+}
+.cards{
+    height: 270px;
+    width:180px;
+    margin: 0px 7px;
+
+}
+.front,.back{
+    padding:4px 5px;
+}
+.front img{
+    height:150px ;
+    width:170px ;
+
+}
+.front h2{
+    font-size:14px ;
+    margin-bottom: 4px;
+}
+.front p{
+    font-size: 13px;    
+} 
+.back h3{
+    margin-top: 70px;
+    margin-bottom: 0px;
+    font-size: 13px;
+}
+.back p{
+    font-size: 10px; 
+}
+.back button{
+    width:160px ;
+    margin: 5px;
+    font-size: 10px;
+    padding: 5px 30px;
+    border-radius: 5px;
+}
+.f1{                
+    width:200px;
+
+}
+.f1 p{
+    
+    line-height: 1.6;
+}
+.f1 h1{
+    font-size:20px ;
+}
+.footer p{
+    font-size: 10px;
+
+}
+.foot h3{
+    font-size: 12px;
+}
+}
+
+@media (min-width:641px) and (max-width:768px) {
+marquee{
+    font-size: 13px;
+}
+nav{
+   padding: 5px;
+   
+}
+nav h1{
+    margin: 0px;
+    font-size: 20px;
+    padding-top: 10px;
+   
+}
+
+li{
+    margin: 0px 5px;
+    font-size: 12px;
+}
+.home{
+    margin: 0px 20px;
+}
+.home p{
+    font-size: 13px ;
+    margin-top: 5px;
+    
+}
+.home h4{
+    font-size: 15px;
+    letter-spacing: 5px;
+
+}
+.home h1{
+    font-size: 50px;
+    margin: 10px 0px;
+}
+.home img{
+     height: 230px;
+     width: 270px;
+}
+.home button{
+    padding: 15px 40px;
+    font-size: medium;
+}
+.contain{
+    margin-top: 100px;
+    height: 50px;
+    padding: 30px;
+    margin-bottom: 50px;
+
+}
+.box h1{
+    font-size: 30px;
+}
+.box p{
+    font-size:9px;
+}
+
+.products{
+    height: 400px;
+    margin: 10px ;
+  
+}
+.cards{
+    height: 300px;
+    width:230px;
+    margin: 0px 7px;
+
+}
+.front,.back{
+    padding:4px 5px;
+}
+.front img{
+    height:170px ;
+    width:200px ;
+
+}
+.front h2{
+    font-size:15px ;
+    margin-bottom: 4px;
+}
+.front p{
+    font-size: 14px;    
+} 
+.back h3{
+    margin-top: 80px;
+    margin-bottom: 0px;
+    font-size: 15px;
+}
+.back p{
+    font-size: 12px; 
+}
+.back button{
+    width:180px ;
+    margin: 5px;
+    font-size: 10px;
+    padding: 5px 30px;
+    border-radius: 5px;
+}
+.f1{
+    width:200px;
+    padding: 10px;
+    margin: 0px;
+}
+.f1 p{
+    
+    line-height: 1.6;
+}
+.f1 h1{
+    font-size:20px ;
+
+}
+.footer p{
+    font-size: 10px;
+
+}
+.foot h3{
+    font-size: 12px;
+}
+
+}
+@media  (min-width:1025px) and (max-width:1500px) {
+
+nav h1{
+    margin: 0px;
+    font-size: 25px;
+    padding-top: 10px;  
+}
+li{
+    margin: 0px 5px;
+    font-size: 13px;
+}
+
+
+.home{
+    margin: 0px 40px;
+}
+.home p{
+    font-size: 17px ;
+    margin-top: 5px;
+    
+}
+.home h4{
+    font-size: 20px;
+    letter-spacing: 7px;
+   
+
+}
+.home h1{
+    font-size: 60px;
+    margin: 10px 0px;
+}
+.home img{
+     height: 280px;
+     width: 350px;
+}
+.home button{
+    padding: 15px 40px;
+    font-size: medium;
+}
+.contain{
+    margin-top: 100px;
+    height: 50px;
+    padding: 30px;
+    margin-bottom: 50px;
+
+}
+.box h1{
+    font-size: 40px;
+}
+.box p{
+    font-size:10px;
+}
+
+.products{
+    height: 400px;
+    margin: 10px ;
+  
+}
+.products{
+    height: 450px;
+    padding: 20px;
+}
+.cards{
+    height: 370px;
+    width:270px;
+    margin: 0px 7px;
+
+}
+.front,.back{
+    padding:4px 5px;
+}
+.front img{
+    height:170px ;
+    width:200px ;
+
+}
+.front h2{
+    font-size:17px ;
+    margin-bottom: 4px;
+}
+.front p{
+    font-size: 15px;    
+} 
+.back h3{
+    margin-top: 100px;
+    margin-bottom: 0px;
+    font-size: 17px;
+}
+.back p{
+    font-size: 13px; 
+}
+.back button{
+    width:200px ;
+    margin: 5px;
+    font-size: 10px;
+    padding: 5px 30px;
+    border-radius: 5px;
+}
+.f1{
+    width:200px;
+    padding: 10px;
+    margin: 0px;
+}
+.f1 p{
+    
+    line-height: 1.6;
+}
+.f1 h1{
+    font-size:20px ;
+
+}
+.footer p{
+    font-size: 12px;
+
+}
+.foot h3{
+    font-size: 14px;
+}
+}

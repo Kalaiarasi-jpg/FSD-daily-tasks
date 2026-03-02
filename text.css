@@ -1,0 +1,67 @@
+.custom-nav{
+    background: transparent;
+
+}
+.hero{
+  
+    background: linear-gradient(to right,white,rgb(196, 214, 214));
+  
+}
+.img1{
+    max-width: 80%;
+}
+.text button{
+    background-color: rgb(29, 29, 29);
+    color: white;
+}
+.img3{
+    max-width: 80%;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+.card{
+    padding:20px;
+    border-radius: 20px;
+}
+.stats{
+    background-color: rgb(216, 216, 216);
+}
+@media(max-width:640px){
+    .hero h1{
+        font-size: 12px;
+    }
+    .hero p{
+        font-size: 10px;
+    }
+    .text button{
+        font-size:8px;
+    }
+    .img1{
+        height:150px;
+        width:160px;
+    }
+    .text2{
+       font-size: 11px;
+      
+    }
+
+}
+@media (min-width:769px) {
+    .text{
+        padding-top: 50px;
+    }
+    .card{
+        height:350px;
+        width:370px;
+    }
+    .img3{
+        height:300px;
+        width: 300px;
+    }
+    .text2{
+        padding-top: 70px;
+        font-size: 20px;
+       
+    }
+}
